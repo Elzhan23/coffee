@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body class="min-h-screen min-w-screen">
+    <div class="container min-w-screen min-h-screen">
+        <div class="header bg-amber-950 w-[100%] h-[100px]">
+            <h1 class="text-yellow-100 font-bold p-6 text-3xl text-center">Coffee Masters</h1>
+        </div>
+        <div class="grid grid-cols-2 grid-rows-2 w-[1700px] h-[550px] p-10 gap-5">
+            <div
+                class="box box1 row-start-1 row-end-3 col-start-1 col-end-2 bg-amber-100 rounded-lg p-5 justify-between">
+                <h2 class="text-xl">ITEMS</h2>
+                <div class="left flex flex-row gap-11">
+                    <p class="pt-6 text-xl">1x</p>
+
+                    <div class="flex flex-col ml-8 mt-4">
+                        <h2 class="font-bold text-xl">Cappucino</h2>
+                        <p class="opacity-40">Light Foam</p>
+                    </div>
+                </div>
+                <div class="right flex justify-end -mt-8">
+                    <h2 class="text-xl font-bold">$6.00</h2>
+                </div>
+                <hr class="mt-10">
+                <div class="left flex flex-row gap-11">
+                    <p class="pt-6 text-xl mt-14">1x</p>
+
+                    <div class="flex flex-col ml-8 mt-13">
+                        <h2 class="font-bold text-xl">Cappucino</h2>
+                        <p class="opacity-40">Almond Milk</p>
+                        <p class="opacity-40">Double Expresso Shot</p>
+                    </div>
+                </div>
+                <div class="right flex justify-end -mt-8">
+                    <h2 class="text-xl font-bold">$7.90</h2>
+                </div>
+                <hr class="mt-10">
+                <div class="left flex flex-row gap-11">
+                    <p class="pt-6 text-xl mt-20">1x</p>
+
+                    <div class="flex flex-col ml-8 mt-20 ">
+                        <h2 class="font-bold text-xl">Croissant</h2>
+                        <p class="opacity-40">Butter</p>
+                    </div>
+                </div>
+                <div class="right flex justify-end -mt-8">
+                    <h2 class="text-xl font-bold">$5.37</h2>
+                </div>
+            </div>
+
+            <div class="box box2 row-start-1 row-span-1 col-start-2 col-span-2 bg-amber-100 rounded-lg p-5">
+                <h2 class="text-xl">NAME</h2>
+                <input type="text" placeholder="Name for order"
+                    class="w-[760px] h-[50px] rounded-[40px] bg-yellow-400 mt-10 p-5">
+            </div>
+            <div class="box box3 row-start-2 row-end-2 col-start-2 col-span-2 bg-amber-100 rounded-lg p-5">
+                <h2 class="text-xl">PAYMENT</h2>
+                <input type="text" placeholder="Card number"
+                    class="w-[760px] h-[50px] rounded-[40px] bg-yellow-400 mt-5 p-5">
+                <input type="text" placeholder="CCV number"
+                    class="w-[300px] h-[50px] rounded-[40px] bg-yellow-400 mt-5 p-5">
+            </div>
+        </div>
+        <div class="footer flex justify-evenly">
+            <div class="left mt-5">
+                <p class="mt-10">Subtotal:</p>
+                <p class="mt-10">Tax:</p>
+                <p class="mt-10 font-bold">Total:</p>
+            </div>
+            <div class="right mt-5">
+                <p class="mt-10">$19.27</p>
+                <p class="mt-10">$0.96</p>
+                <p class="mt-10 font-bold">$20.23</p>
+            </div>
+        </div>
+        <button class="bg-yellow-400 w-[1500px] h-12 rounded-[50px] ml-20 mt-10">Place order</button>
+    </div>
+</body>
+
+</html>
