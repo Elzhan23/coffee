@@ -13,7 +13,7 @@
         <div class="header bg-amber-950 w-[100%] h-[100px]">
             <h1 class="text-yellow-100 font-bold p-6 text-3xl text-center">Coffee Masters</h1>
         </div>
-        <div class="grid grid-cols-2 grid-rows-2 w-[1700px] h-[550px] p-10 gap-5">
+        <div class="flex flex-col sm:grid sm:grid-cols-2 sm:grid-rows-2  sm:w-[1700px] h-[550px] p-10 gap-5">
             <div
                 class="box box1 row-start-1 row-end-3 col-start-1 col-end-2 bg-amber-100 rounded-lg p-5 justify-between">
                 <h2 class="text-xl">ITEMS</h2>
@@ -58,17 +58,17 @@
             <div class="box box2 row-start-1 row-span-1 col-start-2 col-span-2 bg-amber-100 rounded-lg p-5">
                 <h2 class="text-xl">NAME</h2>
                 <input type="text" placeholder="Name for order"
-                    class="w-[760px] h-[50px] rounded-[40px] bg-yellow-400 mt-10 p-5">
+                    class="sm:w-[760px] h-[50px] rounded-[40px] bg-yellow-400 mt-10 p-5">
             </div>
             <div class="box box3 row-start-2 row-end-2 col-start-2 col-span-2 bg-amber-100 rounded-lg p-5">
                 <h2 class="text-xl">PAYMENT</h2>
                 <input type="text" placeholder="Card number"
-                    class="w-[760px] h-[50px] rounded-[40px] bg-yellow-400 mt-5 p-5">
+                    class="sm:w-[760px] h-[50px] rounded-[40px] bg-yellow-400 mt-5 p-5">
                 <input type="text" placeholder="CCV number"
-                    class="w-[300px] h-[50px] rounded-[40px] bg-yellow-400 mt-5 p-5">
+                    class="sm:w-[300px] h-[50px] rounded-[40px] bg-yellow-400 mt-5 p-5">
             </div>
         </div>
-        <div class="footer flex justify-evenly">
+        <div class="footer flex justify-evenly mt-80 sm:mt-0">
             <div class="left mt-5">
                 <p class="mt-10">Subtotal:</p>
                 <p class="mt-10">Tax:</p>
@@ -80,7 +80,9 @@
                 <p class="mt-10 font-bold">$20.23</p>
             </div>
         </div>
-        <button class="bg-yellow-400 w-[1500px] h-12 rounded-[50px] ml-20 mt-10">Place order</button>
+        <button
+            class="bg-yellow-400 w-[500px] text-center flex justify-center items-center  sm:w-[1500px] h-12 rounded-[50px] ml-20 mt-10">Place
+            order</button>
     </div>
 </body>
 
